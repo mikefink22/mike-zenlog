@@ -1,0 +1,31 @@
+name: Feature / User Story Issue
+description: Plantilla estándar para Issues del proyecto Agenda 2026 con criterios Gherkin
+title: "[ISSUE-XXX] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: user_story
+    attributes:
+      label: Historia de Usuario
+      description: "Como <rol>, quiero <funcionalidad>, para <beneficio>."
+    validations:
+      required: true
+  - type: textarea
+    id: gherkin
+    attributes:
+      label: Criterios de Aceptación (Gherkin)
+      description: Escenarios Given / When / Then verificables
+      value: |
+        Scenario: 
+          Given 
+          When 
+          Then 
+    validations:
+      required: true
+  - type: textarea
+    id: testing
+    attributes:
+      label: Plan de Testing
+      description: Pruebas unitarias, de integración o E2E requeridas
+    validations:
+      required: true

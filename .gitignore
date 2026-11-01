@@ -1,0 +1,69 @@
+# =============================================================================
+# 1. SECRETOS Y VARIABLES DE ENTORNO (NUNCA SUBIR A GIT)
+# =============================================================================
+.env
+.env.*
+!.env.example
+!.env.template
+*.pem
+*.key
+
+# =============================================================================
+# 2. CONFIGURACION LOCAL DEL AGENTE IA (RUTAS DE MAQUINA Y HOOKS PERSONALES)
+# =============================================================================
+AGENTS.md
+GEMINI.md
+.agents/
+.agent/
+.gemini/
+
+# =============================================================================
+# 3. BASE DE DATOS LOCAL (PGlite / Datos privados de la agenda en desarrollo)
+# =============================================================================
+.local-db/
+apps/api/.local-db/
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+
+# =============================================================================
+# 4. DEPENDENCIAS Y PAQUETES NODE.JS
+# =============================================================================
+node_modules/
+.npm/
+.pnp.*
+
+# =============================================================================
+# 5. BUILDS, COMPILADOS Y CACHES (TypeScript, Vite, Cloud)
+# =============================================================================
+dist/
+build/
+out/
+.vite/
+*.tsbuildinfo
+.sst/
+.aws-sam/
+.serverless/
+
+# =============================================================================
+# 6. REPORTES DE TESTING Y COBERTURA (Vitest, Playwright)
+# =============================================================================
+coverage/
+playwright-report/
+test-results/
+blob-report/
+
+# =============================================================================
+# 7. LOGS Y ARCHIVOS DEL SISTEMA OPERATIVO / IDE
+# =============================================================================
+logs/
+*.log
+npm-debug.log*
+Thumbs.db
+Desktop.ini
+.DS_Store
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
