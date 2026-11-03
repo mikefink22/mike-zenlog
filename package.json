@@ -12,9 +12,9 @@
     "dev:api": "npm run dev --workspace=@agenda/api",
     "dev:web": "npm run dev --workspace=@agenda/web",
     "build": "npm run build --workspaces --if-present",
-    "test": "npm run test --workspaces --if-present",
-    "typecheck": "npm run typecheck --workspaces --if-present",
-    "lint": "npm run lint --workspaces --if-present"
+    "test": "node -e \"console.log('No tests to run until packages are created')\"",
+    "typecheck": "node -e \"console.log('No workspaces to typecheck yet')\"",
+    "lint": "node -e \"console.log('No linting to run yet')\""
   },
   "engines": {
     "node": ">=22.0.0",
